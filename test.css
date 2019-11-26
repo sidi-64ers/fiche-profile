@@ -1,0 +1,22 @@
+.compMetier1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.competences{
+    display: flex;
+    flex-flow: column;
+}
+.maquetter {
+    display: flex;
+    flex-flow: column;
+}
+
+.comprendre{
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    align-self: center;
+}

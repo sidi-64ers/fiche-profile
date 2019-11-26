@@ -1,0 +1,617 @@
+*{
+    margin: 0;
+    padding: 0;
+}  
+    html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.conteneur{
+   height: 100%;
+   width: 100%;
+}
+
+.intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url("Network - 12716.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    
+}
+
+
+
+
+
+nav{
+    width: 100%;
+    height: 8%;
+    background-color: #2D6E93;
+    position: sticky; 
+    top: 0px;
+
+}
+
+.propos{
+   
+    color: #2D6E93;
+}
+
+.CompTech{
+    color: white;
+    background-color: #2D6E93;
+    width: 100%;
+    height: 100vh;
+    
+    
+
+}
+
+.CompHum{
+    width: 100%;
+    height: 100vh;
+    color:  #2D6E93;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.CompMetier{
+    width: 100%;
+    height: 100vh;
+    color:  white;
+    background-color:#2D6E93;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.Contact{
+  color:  #2D6E93;
+  background-color: white;
+
+}
+
+
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+
+    
+}
+
+ul li{
+    margin-top: 15px;
+}
+
+ul li a{
+    
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    
+
+}
+
+h1{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.propos{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+
+}
+
+
+
+#apropos{
+    margin: 200px 10px 10px 10px;
+    padding: 10px 20px 10px 20px;
+    text-align: justify;
+    
+}
+
+#cv{
+    text-align: center;
+  
+}
+
+
+/**cv**/
+
+.cv{
+    display: flex;
+    flex-direction: column;
+}
+
+.info:hover{
+    color: green;
+    
+}
+
+.qualites:hover{
+    color: green;
+    width: 190px;
+    height: 190px;
+    transition: transform .2s;
+    zoom: 1.5;
+
+}
+
+.infophoto{
+    height: 25px;
+}
+
+.info{
+    float: left;
+
+}
+
+
+.section{
+    
+    text-align: justify;
+}
+
+.section:hover{
+    color: green;
+}
+
+.partie-gauche{
+    float: left;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.partie-droite{
+    float: right;
+    font-size: 10px;
+}
+
+h3{
+    font-size: 14px;
+    color: #338888;
+    border-bottom: 3px solid #3388DD;
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+
+.poste{
+    font-weight: bold;
+    font-size:  10px;
+}
+
+.qualites{
+
+    display: flex;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 10px;
+    justify-content: flex-end;
+}
+
+#dates-exp-pro p{
+    margin-bottom: 15px;
+}
+
+.partie-centr{
+    font-weight: bold;
+    font-size: 10px;
+    font-style : italic;
+    
+}    
+
+label{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 145px;height: 80px;
+    text-align: center;
+    border-radius: 15%;
+    font-size: 20px;
+
+}
+.btn-tech { 
+    display: flex;
+    justify-content: center;
+ 
+   
+    padding: 5px;
+    color: #2D6E93;
+    font-weight: bold;
+    background-color:#2D6E93 ;
+}
+
+input:checked + label + .tech { display:block; }
+input + label:after { content: "voir"; }
+input:checked + label:after { content: "masquer"; }
+
+
+.tech{
+    display: block;
+    color: white;
+    background-color: #2D6E93;
+    border-radius: 4px;
+    width: 400px;
+    display: none;
+    z-index: 2;
+    
+}
+
+.htmlprogres { 
+  
+    background-color: black;
+    border-radius: 13px;
+    padding: 3px;
+  }
+  
+  .htmlprogres > div {
+    background-color: orange;
+    width: 10%;
+    height: 20px;
+    border-radius: 10px;
+  }
+  .cssprogres { 
+    
+    background-color: black;
+    border-radius: 13px;
+    padding: 3px;
+  }
+  
+  .cssprogres > div {
+    background-color: orange;
+    width: 5%;
+    height: 20px;
+    border-radius: 10px;
+  }
+  .phpprogres { 
+    
+    background-color: black;
+    border-radius: 13px;
+    padding: 3px;
+  }
+  
+  .phpprogres > div {
+    background-color: orange;
+    width: 0%;
+    height: 20px;
+    border-radius: 10px;
+  }
+  .sqlprogres { 
+    
+    background-color: black;
+    border-radius: 13px;
+    padding: 3px;
+  }
+  
+  .sqlprogres > div {
+    background-color: orange;
+    width: 0%;
+    height: 20px;
+    border-radius: 10px;
+  }
+  .javascriptprogres { 
+    
+    background-color: black;
+    border-radius: 13px;
+    padding: 3px;
+  }
+  
+  .javascriptprogres > div {
+    background-color: orange;
+    width: 0%;
+    height: 20px;
+    border-radius: 10px;
+  }
+
+
+
+
+img {
+    border-radius: 5%;
+    width: 160px;
+    height: 250px;
+}
+
+.card1, .card2, .card3, .card4, .card5 {
+    background-color: transparent;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+}
+  
+  
+  .flip-card-inner {
+    position: relative;
+    width: 160px;
+    height: 250px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .card1:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card2:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .card3:hover .flip-card-inner {
+    transform: rotateY(180deg);
+
+  }
+
+  .card4:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    
+  }
+
+  .card5:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    
+  }
+
+  /* Position the front and back side */
+  .card-front, .card-back {
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .card-front {
+    background-color: white;
+    
+  }
+  
+  /* Style the back side */
+  .card-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2D6E93;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 5%;
+    padding-left: 5px;
+  }
+
+
+  input:checked + label + .metier { display: block; }
+input + label:after { content: "voir"; }
+input:checked + label:after { content: "masquer"; }
+
+label {
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 145px;height: 80px;
+    text-align: center;
+    border-radius: 15%;
+    font-size: 20px;
+}
+
+
+.metier{
+    display: flex;
+    justify-content: center;
+    color: #2D6E93;
+    display: none;
+    background-color: white;
+    border-radius: 4px;
+    width: 100%;
+    height: 650px;
+    overflow: scroll;
+}
+
+.btn-metier { 
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; 
+    width: 100%; 
+    padding: 5px;
+    color: #2D6E93;
+    font-weight: bold;
+}
+
+/**
+form{
+   
+   background-color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+ .formulaire {
+    
+    background-color: #2D6E93;
+    text-align: center;  
+    
+}
+
+.contact{
+    background-color: white;
+    color: #2D6E93;
+
+}
+
+input,textarea{
+    background-color: #2D6E93;
+    color: white;
+}
+**/
+
+.intro img{
+    width: 50px;
+    height: 50px;
+    display:flex;
+    margin: 0 auto;
+}
+
+
+.propos img{
+    width: 50px;
+    height: 50px;
+    display:flex;
+    align-self: flex-end;
+}
+
+
+
+  
+.container {
+    display: inline-block;
+    position: relative;
+    
+    cursor: pointer;
+    font-size: 12px;
+    
+  }
+
+
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+  }
+
+  /* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+
+  /* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+ 
+/* Style inputs */
+.containerContact input[type=text], select, textarea {
+    width: 60%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+
+  }
+  
+  .containerContact input[type=submit] {
+    background-color: #2D6E93;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+  }
+  
+  .containerContact input[type=submit]:hover {
+    background-color: rgb(112, 176, 212);
+    
+  }
+
+
+  .containerContact input[type=reset] {
+    background-color: #2D6E93;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .containerContact input[type=reset]:hover {
+    background-color: rgb(112, 176, 212);
+    
+  }
+  
+  /* Style the container/contact section */
+  .containerContact {
+    border-radius: 5px;
+    background-color: #ffff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, .containerContact input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  
